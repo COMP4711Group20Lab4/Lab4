@@ -29,6 +29,20 @@ class First extends Application
 
         $this->render();
     }
+<<<<<<< HEAD
+
+    public function zzz()
+    {
+        // this is the view we want shown
+        $this->data['pagebody'] = 'justone';
+
+        // build the list of authors, to pass on to our view
+        $source = $this->quotes->get(1);
+        $author = array ();
+
+        // pull data from quotes data
+        $this->data['who'] = $source['who'];
+=======
     
     public function gimmie($id)
     {
@@ -40,6 +54,7 @@ class First extends Application
 	
         // pull data from quotes data
 	$this->data['who'] = $source['who'];
+>>>>>>> 2b0a89eeba438e134cbba51f052feb9b56b992ec
         $this->data['what'] = $source['what'];
         $this->data['mug'] = $source['mug'];
 
