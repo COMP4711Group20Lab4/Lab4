@@ -29,4 +29,20 @@ class First extends Application
 
         $this->render();
     }
+    
+    public function gimmie($id)
+    {
+        // view we want shown
+        $this->data['pagebody'] = 'justone';
+
+	// get the quote #3. id grabs the quote #3.
+        $source = $this->quotes->get($id);
+	
+        // pull data from quotes data
+	$this->data['who'] = $source['who'];
+        $this->data['what'] = $source['what'];
+        $this->data['mug'] = $source['mug'];
+
+        $this->render();
+    }
 }

@@ -60,4 +60,5 @@ $route['dunno'] = function() {
     readfile($source);
     die();
 };
+$route['show/(:num)'] = 'first/gimmie/3'; //added feature/job5
 
