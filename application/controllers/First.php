@@ -29,8 +29,7 @@ class First extends Application
 
         $this->render();
     }
-<<<<<<< HEAD
-
+	
     public function zzz()
     {
         // this is the view we want shown
@@ -42,7 +41,11 @@ class First extends Application
 
         // pull data from quotes data
         $this->data['who'] = $source['who'];
-=======
+        $this->data['what'] = $source['what'];
+        $this->data['mug'] = $source['mug'];
+
+        $this->render();
+    }
     
     public function gimmie($id)
     {
@@ -54,7 +57,6 @@ class First extends Application
 	
         // pull data from quotes data
 	$this->data['who'] = $source['who'];
->>>>>>> 2b0a89eeba438e134cbba51f052feb9b56b992ec
         $this->data['what'] = $source['what'];
         $this->data['mug'] = $source['mug'];
 
