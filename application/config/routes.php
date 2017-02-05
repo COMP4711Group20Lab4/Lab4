@@ -61,4 +61,4 @@ $route['dunno'] = function() {
     die();
 };
 $route['show/(:num)'] = 'first/gimmie/3'; //added feature/job5
-
+$route['comp(\d+)/(.*)'] = 'wise/bingo'; //added feature/job8
