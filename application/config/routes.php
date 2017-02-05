@@ -52,11 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-<<<<<<< HEAD
 
 // Rerouting the sleep page
 $route['sleep'] = 'first/zzz';
-=======
 $route['lock/(:any)/(:any)'] = 'welcome/shucks';
 $route['dunno'] = function() {
     $source = '../application/suprise.jpg';
@@ -67,4 +65,3 @@ $route['dunno'] = function() {
 };
 $route['show/(:num)'] = 'first/gimmie/3'; //added feature/job5
 $route['comp(\d+)/(.*)'] = 'wise/bingo'; //added feature/job8
->>>>>>> 2b0a89eeba438e134cbba51f052feb9b56b992ec
