@@ -63,5 +63,6 @@ $route['dunno'] = function() {
     readfile($source);
     die();
 };
+$route['([a-z]{4})/bingo'] = 'bingo';
 $route['show/(:num)'] = 'first/gimmie/3'; //added feature/job5
 $route['comp(\d+)/(.*)'] = 'wise/bingo'; //added feature/job8
